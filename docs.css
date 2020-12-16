@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">);
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.logo{
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width:27%;
+  border: 3px solid white;
+  border-radius: 100px;
+  
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  height: 100px;
+
+}
+
+
+.nav-list{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+.nav-list li{
+  list-style: none;
+  padding: 26px 30px;
+  text-decoration: none;
+}
+
+.nav-list li a: hover{
+  text-decoration: none;
+  color: white;
+}
+
+.rightnav{
+  width:30%;
+  text-align: right;
+  margin: auto;
+
+}
+
+#search{
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid gray;
+  border-radius: 9px;
+}
+
+
+.background{
+  background: rgba(0, 0, 0, 0.7) url('https://picsum.photos/200/300?grayscale');
+  background-size: cover;
+  background-blend-mode: darken;
+
+}
+
+.firstsection{
+  height: 100vh;
+}
+
+
+.box-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  max-width: 50%;
+  margin: auto;
+  padding: 30vh;
+}
+
+.firsthalf{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondhalf{
+  width: 30%;
+}
+
+.secondhalf img{
+  width: 60%;
+  border: 4px solid white;
+  border-radius: 0px;
+  display: block;
+  margin: auto;
+  border: none;
+}
+
+.text-big{
+  font-size: 28px;
+  color: gold;
+  padding: 10px 0px;
+}
+
+.text-small{
+  font-size: 16px;
+  color: gold;
+  padding: 5px 0px;
+}
+
+.btn{
+  padding: 8px 20px;
+  margin: 7px 3px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 16px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-sm{
+  padding: 3px 10px;
+  vertical-align: middle;
+}
+
+.section{
+
+  display: flex;
+  align-items: center;
+  justify-content:
+  max-width: 30%;
+  margin: 50PX;
+  font-family: 'Dosis', sans-serif;
+
+}
+
+
+
+.Left{
+
+  display: flex;
+  align-items: center;
+  justify-content:
+  max-width: 30%;
+  margin: 0px 100PX;
+  flex-direction:row-reverse;
+
+}
+.secRight{
+
+  display: flex;
+  align-items: center;
+  justify-content:
+  max-width: 30%;
+  margin: 50PX;
+}
+
+.paras{
+  padding: 0px 65px;
+
+}
+
+.sectiontag{
+  color: black;
+  font-size: 24px;
+  padding: 12px 0px;
+
+}
+
+.sectionsubtag{
+  font-family: 'Assistant', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.contact{
+  background-color: #a2abac;
+  height: auto;
+
+
+
+}
+
+.text-center{
+  text-align:center;
+  padding: 10px 0px;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+}
+
+
+.form{
+  max-width: 50%;
+  margin: 0px auto;
+  font-size: 18px;
+
+}
+
+
+.form-input{
+  margin: 8px -11px;
+padding: 10px 0px;
+width: 101%;
+font-size: 12px;
+border: 2px solid black;
+border-radius: 5px;
+font-family: 'Dosis', sans-serif;
+color: black;
+
+}
+
+.btn-dark{
+  font-size: 15px;
+    color: #000000;
+    border: solid black;
+    background-color: gold;
+    padding: 10px 30px;
+    margin: 8px 320px;
+
+}
+
+.xyz{
+  text-align: center;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+}
+
+.lapinoz{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top:15px;
+
+}
+
+.line{
+  width: 32px;
+  background-color: white;
+  height: 4px;
+  margin: 3px 3px;
+}
+@media only screen and (max-width: 1140px) {
+  .nav-list{
+    flex-direction: column;
+  }
+  .navbar{
+    height: 447px;
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+    height: 450px;
+  }
+  .box-main{
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  .rightnav{
+    text-align: center;
+  }
+  #search{
+    width: 100%;
+  }
+  .lapinoz{
+    display: block;
+  }
+  .h-nav-resp{
+    height: 50px;
+  }
+  .v-class-resp{
+    opacity: 0;
+  }
+
+  .section{
+    flex-direction: column-reverse;
+  }
+
+  .Left{
+    flex-direction:column-reverse;
+  }
+
+.secRight{
+  flex-direction: column-reverse;
+}
+.text-small{
+  text-align: center;
+}
+.text-big{
+  text-align: center;
+}
+.btn{
+  text-align: center;
+}
+.paras{
+  padding: 0px 0px;
+}
+.contact{
+  background-size: auto;
+}
+.btn-dark{
+  margin: 8px 180px;
+
+}
+}
